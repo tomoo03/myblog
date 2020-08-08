@@ -1,0 +1,12 @@
+.wrapper
+  %header.header
+    %ul
+      %li logo
+  .article-new
+    .article-new__top
+      %h2 新規投稿
+    .article-new__main
+      = form_with model: @article, url: articles_path, local: true do |f|
+        = f.text_field :title, placeholder: 'タイトル', class: "article-new__main__title"
+        = f.rich_text_area :content, placeholder: '本文'
+        = f.submit '投稿', class: "article-new__main__submit"

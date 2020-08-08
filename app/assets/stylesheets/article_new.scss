@@ -1,0 +1,35 @@
+.article-new {
+  padding: 1.5rem;
+
+  input {
+    border: 1px solid #dbdbdb;
+    border-radius: 0.2rem;
+  }
+
+  &__top {
+    margin-bottom: 1rem;
+
+    h2 {
+      font-weight: bolder;
+    }
+  }
+
+  &__main {
+
+    &__title {
+      width: 20rem;
+      height: 2rem;
+      padding-left: 0.3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__submit {
+      width: 5rem;
+      padding: 0.2rem;
+      margin-top: 3rem;
+      background: #31a9b8;
+      color: #fcfdfe;
+      text-align: center;
+    }
+  }
+}
